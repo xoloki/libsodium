@@ -2908,7 +2908,7 @@ ristretto255_p3_tobytes(unsigned char *s, const ge25519_p3 *h)
     fe25519_tobytes(s, s_);
 }
 
-static void
+void
 ristretto255_elligator(ge25519_p3 *p, const fe25519 t)
 {
     fe25519 c;

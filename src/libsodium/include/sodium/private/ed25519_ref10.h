@@ -124,6 +124,8 @@ void ristretto255_p3_tobytes(unsigned char *s, const ge25519_p3 *h);
 
 void ristretto255_from_hash(unsigned char s[32], const unsigned char h[64]);
 
+void ristretto255_elligator(ge25519_p3 *h, const fe25519 t);
+
 /*
  The set of scalars is \Z/l
  where l = 2^252 + 27742317777372353535851937790883648493.
